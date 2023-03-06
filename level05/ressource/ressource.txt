@@ -1,0 +1,16 @@
+Level05:
+
+Dans ce niveau, nous devons profiter de la tâche planifiée pour exécuter un script en tant que l'utilisateur flag05 toutes les 2 minutes.
+
+Nous avons découvert que la tâche est définie dans la variable MAIL.
+
+Nous avons trouvé le script à exécuter dans /usr/sbin/openarenaserver.
+
+Cependant, nous n'avons pas la permission d'exécuter directement ce script.
+
+Nous avons donc créé un fichier dans /opt/openarenaserver qui exécutera la commande getflag et écrira le résultat dans /tmp/flag.
+
+Nous avons utilisé la commande suivante pour créer le fichier:
+`echo ' getflag > /tmp/flag' > /opt/openarenaserver/flag && sleep 180 && cat /tmp/flag`
+
+Cela nous a permis de récupérer le drapeau.

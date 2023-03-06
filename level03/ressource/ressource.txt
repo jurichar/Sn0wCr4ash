@@ -1,0 +1,21 @@
+Level03:
+
+Exécutez le fichier exécutable "level03" avec différents arguments, mais cela ne fait que afficher "exploit me".
+
+Utilisez gdb et disas pour examiner les fonctions utilisées dans l'exécutable, mais cela ne semble pas être utile.
+
+Utilisez la commande "strings" pour afficher toutes les variables utilisées dans l'exécutable.
+
+Trouvez la variable qui exécute "/usr/bin/env echo Exploit me".
+
+Essayez d'exécuter "/usr/bin/env echo Exploit me" avec différents paramètres.
+
+Changez la variable PATH en créant un script qui exécute "/bin/getflag".
+
+Créez un script dans /tmp et nommez-le "echo" (parce qu'il utilise la commande "echo") et placez "/bin/getflag" dedans.
+
+Modifiez la variable PATH pour qu'elle pointe vers /tmp.
+
+Rendez le script exécutable avec la commande "chmod".
+
+Exécutez le fichier exécutable "level03" et il devrait afficher le bon flag.

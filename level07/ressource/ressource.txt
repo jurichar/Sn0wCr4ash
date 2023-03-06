@@ -1,0 +1,13 @@
+Level07:
+
+Dans ce niveau, nous avons un exécutable appelé level07.
+
+Lorsque nous avons essayé de l'exécuter, il a simplement affiché "level07".
+
+Nous avons donc décidé d'utiliser strings pour analyser l'executable.
+
+Nous avons ainsi découvert que le programme utilisait la variable d'environnement "LOGNAME" suivie de /bin/echo %s.
+
+Nous avons alors exporté la variable d'environnement LOGNAME avec la commande : export LOGNAME='`getflag`'.
+
+Puis exécuté à nouveau le programme avec "./level07". Et voilà, le flag était affiché !

@@ -1,0 +1,17 @@
+Dans ce niveau, nous avons trouvé deux fichiers : level06 et level06.php.
+
+Le script level06 nous affiche la lettre "r", qui est le résultat de la fonction x prenant deux arguments, les arguments passés en ligne de commande.
+
+La fonction x utilise des fonctions telles que preg_replace qui prennent trois arguments :
+le premier est le caractère à pointer, le deuxième est le caractère de remplacement et le troisième est la chaîne de caractères.
+
+Après analyse, nous avons découvert que l'argument à pointer doit être "[x (....)]".
+
+Nous avons essayé d'exécuter la commande "echo '[x exec(getflag)]'" mais cela a simplement affiché "exec(getflag)".
+
+Après quelques recherches, nous avons découvert que pour exécuter la commande lorsqu'elle est appelée avec print, nous devons utiliser les accolades {${}}.
+
+Nous avons donc exécuté la commande suivante :
+`echo '[x {${exec(getflag)}}]' > /tmp/flag && ./level06 /tmp/flag`
+
+Et cela a fonctionné ! Nous avons récupéré le flag avec succès.

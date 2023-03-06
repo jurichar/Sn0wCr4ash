@@ -1,0 +1,14 @@
+Level01:
+
+Faites un ls / /* pour avoir une vision global des accès accordés.
+
+Naviguez dans les dossiers et accédez à /etc/ où vous trouvez un fichier `passwd`.
+
+Utilisez la commande "cat /etc/passwd" pour afficher le contenu du fichier passwd qui contient tous les mots de passe des utilisateurs.
+
+Recherchez le mot de passe de flag01 dans le fichier passwd, mais il est crypté :
+`flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash`
+
+Utilisez John the Ripper pour décrypter le mot de passe de flag01.
+
+Utilisez le mot de passe obtenu pour vous connecter en tant que flag01 et réussir le niveau 01.

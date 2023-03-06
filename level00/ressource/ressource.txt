@@ -1,0 +1,21 @@
+Level00:
+
+Faites un ls dans le dossier level00, mais il n'y a rien.
+
+Recherchez un readme car vous avez entendu parler de son existence dans la vidéo du projet.
+
+Dans le readme, on trouve le mot "FIND".
+
+Utilisez la commande `find / -user "flag00" 2>/dev/null` pour rechercher le fichier 'flag00' dans tous les dossiers de la machine.
+
+Trouvez les chemins :
+/usr/sbin/john
+/rofs/usr/sbin/john
+
+Utilisez la commande `cat /usr/sbin/john` pour afficher le contenu du fichier : cdiiddwpgswtgt
+
+Essayez de vous connecter en tant que flag00 avec la commande `su -l flag00`, mais cela ne fonctionne pas.
+
+Essayez de décoder le mot de passe avec un outil de décodage (dcode) en utilisant le chiffrement de César.
+
+Essayez la première suggestion de dcode et cela fonctionne.

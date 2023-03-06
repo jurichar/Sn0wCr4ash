@@ -1,0 +1,11 @@
+Level04:
+
+Examiner le script perl level04.pl pour voir qu'il imprime simplement la valeur de "x".
+
+Essayer de curler "localhost:4747" et constater qu'il ne renvoie rien mais que curl fonctionne.
+
+Passer l'argument "x" à localhost en utilisant la syntaxe "?x=lol" et constater que cela fonctionne.
+
+Essayer d'exécuter getflag avec curl en utilisant la syntaxe "localhost:4747?x='getflag'".
+
+Obtenir le flag en exécutant cette commande.

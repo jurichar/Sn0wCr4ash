@@ -1,0 +1,27 @@
+Level09:
+
+Dans ce niveau, nous avons un exécutable et un fichier "token".
+
+Nous avons essayé de faire un "cat" sur le fichier, mais cela n'a rien donné de pertinent.
+Ensuite, nous avons essayé de lancer la commande "./level09 token", mais cela n'a rien affiché de visible.
+
+Nous avons donc décidé de nous concentrer sur l'exécutable et de comprendre ce qu'il fait :
+level09@SnowCrash:~$ ./level09 aaaaaaaa
+abcdefgh
+level09@SnowCrash:~$ ./level09 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+abcdefghijklmnopqrstuvwxyz{|}~��
+level09@SnowCrash:~$ ./level09 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+abcdefghijklmnopqrstuvwxyz{|}~������
+level09@SnowCrash:~$ ./level09 `cat token`
+f5mpq;v�E��{�{��TS�W�����
+
+En d'autres termes, les caractères sont égaux à leur code ASCII plus leur position dans la chaîne.
+
+Pour déchiffrer cela, nous devons faire l'inverse. Nous utilisons "-" au lieu de "+" pour obtenir le bon mot de passe.
+
+Après avoir écrit le programme dans tmp/ , nous avons testé de mettre "token" en premier argument.
+
+Nous avons lancer la commande :
+./a.out `cat ~/token` ; echo ""
+
+Qui nous a donnée le flag !

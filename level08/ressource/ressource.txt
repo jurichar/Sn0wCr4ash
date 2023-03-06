@@ -1,0 +1,15 @@
+Level08:
+
+Dans le niveau 08, nous avons le fichier exécutable "./level08" et un fichier "token".
+
+Nous avons essayé de l'exécuter en passant "token" comme argument, mais cela nous a donné le message d'erreur:
+"You may not access 'token'"
+
+Nous avons donc décidé d'utiliser strings pour analyser le binaire.
+
+Le programme utilise la chaîne de format "%s [file to read]\n".
+
+Nous avons créé un lien symbolique vers le fichier "./level08" dans "/tmp/lol" en utilisant la commande :
+ln -s /home/user/level08/token /tmp/lol
+
+Puis nous avons exécuté "./level08 /tmp/lol" pour récupérer le password (pour recuperer le flag avec su flag08).

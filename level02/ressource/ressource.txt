@@ -1,0 +1,17 @@
+Level02:
+
+Lancez la commande "ls" pour voir le contenu du dossier.
+
+Trouvez un fichier appelé "level02.pcap".
+
+Recherchez ce qu'est un fichier .pcap. C'est un fichier enregistré par Wireshark qui contient des données de trafic réseau.
+
+Transférez le fichier .pcap sur votre machine locale à l'aide de la commande "scp".
+
+Ouvrez le fichier .pcap avec Wireshark pour visualiser les données de trafic réseau.
+
+Recherchez le trafic de type "ww:login" dans les données de trafic.
+
+Trouvez un mot de passe qui est caché derrière un point (".") dans le trafic. Essayez-le, mais il ne fonctionne pas.
+
+Modifiez la langue d'affichage des données de trafic pour trouver un autre mot de passe. Essayez-le et il devrait fonctionner pour accéder au niveau suivant.
