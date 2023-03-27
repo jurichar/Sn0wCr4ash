@@ -1,3 +1,5 @@
+Level06:
+
 Dans ce niveau, nous avons trouvé deux fichiers : level06 et level06.php.
 
 Le script level06 nous affiche la lettre "r", qui est le résultat de la fonction x prenant deux arguments, les arguments passés en ligne de commande.
